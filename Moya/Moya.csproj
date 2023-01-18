@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F41F76A5-BFA4-4EF0-9597-CC897F7BD226}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Moya</RootNamespace>
+    <AssemblyName>Moya</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutProgramm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgramm.Designer.cs">
+      <DependentUpon>AboutProgramm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add1.Designer.cs">
+      <DependentUpon>Add1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add2.Designer.cs">
+      <DependentUpon>Add2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add3.Designer.cs">
+      <DependentUpon>Add3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControl.Designer.cs">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart_otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart_otchet.Designer.cs">
+      <DependentUpon>Chart_otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateLogin.Designer.cs">
+      <DependentUpon>CreateLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBank.cs" />
+    <Compile Include="Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry.Designer.cs">
+      <DependentUpon>Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastIzm.Designer.cs">
+      <DependentUpon>FastIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izm1.Designer.cs">
+      <DependentUpon>Izm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izm2.Designer.cs">
+      <DependentUpon>Izm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izm3.Designer.cs">
+      <DependentUpon>Izm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtchControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtchControl.Designer.cs">
+      <DependentUpon>OtchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootAdmin.Designer.cs">
+      <DependentUpon>RootAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootCreate.Designer.cs">
+      <DependentUpon>RootCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootIzm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootIzm.Designer.cs">
+      <DependentUpon>RootIzm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Otd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Otd.Designer.cs">
+      <DependentUpon>Select_Otd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Product.Designer.cs">
+      <DependentUpon>Select_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tab1.Designer.cs">
+      <DependentUpon>Tab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tab2.Designer.cs">
+      <DependentUpon>Tab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tab3.Designer.cs">
+      <DependentUpon>Tab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserData.Designer.cs">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutProgramm.resx">
+      <DependentUpon>AboutProgramm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add1.resx">
+      <DependentUpon>Add1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add2.resx">
+      <DependentUpon>Add2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add3.resx">
+      <DependentUpon>Add3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControl.resx">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart_otchet.resx">
+      <DependentUpon>Chart_otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLogin.resx">
+      <DependentUpon>CreateLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry.resx">
+      <DependentUpon>Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastIzm.resx">
+      <DependentUpon>FastIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izm1.resx">
+      <DependentUpon>Izm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izm2.resx">
+      <DependentUpon>Izm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izm3.resx">
+      <DependentUpon>Izm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtchControl.resx">
+      <DependentUpon>OtchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RootAdmin.resx">
+      <DependentUpon>RootAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootCreate.resx">
+      <DependentUpon>RootCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootIzm.resx">
+      <DependentUpon>RootIzm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Otd.resx">
+      <DependentUpon>Select_Otd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Product.resx">
+      <DependentUpon>Select_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab1.resx">
+      <DependentUpon>Tab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab2.resx">
+      <DependentUpon>Tab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab3.resx">
+      <DependentUpon>Tab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserData.resx">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\google_chrome_logo_icon_145233.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\CreatePodkl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\back4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\del_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\dr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\izm_polz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\izmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Otdel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Podkl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Port.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Postav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\registr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Screenshot_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Screenshot_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\send_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\vhod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\voiti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-google-chrome-computer-icons-web-browser-desktop-chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\uroven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\sbros_pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\forget_pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\zapr_sbros_pass.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
